@@ -1,7 +1,7 @@
 /**
  * Created by Li on 2017/3/16.
  */
-import {React} from "react"
+import React from "react"
 import ReactDOM from "react-dom"
 import {fromJS,Map,List} from "immutable"
 // import expect  from "chai"
@@ -13,12 +13,12 @@ import {
     findRenderedDOMComponentWithTag,
     scryRenderedDOMComponentsWithClass,
 } from "react-addons-test-utils"
-import {describe} from "mocha";
+import {describe, it} from "mocha";
 
 
 describe("InputBox",()=>{
     it("send message",()=>{
-        var message=''
+        var message
         function sendMessage(msg){
             message = msg
         }
